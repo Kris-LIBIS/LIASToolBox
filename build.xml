@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<project name="LIASToolBox" default="main">
+	<target name="main" depends="doc,compress" />
+	<target name="compress" description="Build JAR">
+		<jar destfile="dist/LIASToolBox.jar" index="true">
+			<fileset dir="bin" />
+			<fileset dir="dist/lib" includes="*.jar" />
+		</jar>
+	</target>
+	<target name="doc">
+		<javadoc sourcepath="src" destdir="doc" use="true" />
+	</target>
+</project>
