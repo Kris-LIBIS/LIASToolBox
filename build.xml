@@ -4,7 +4,7 @@
 	<target name="compress" description="Build JAR">
 		<jar destfile="dist/LIASToolBox.jar" index="true">
 			<fileset dir="bin" />
-			<fileset dir="dist/lib" includes="*.jar" />
+			<fileset dir="lib" includes="*.jar" />
 		</jar>
 	</target>
 	<target name="doc">

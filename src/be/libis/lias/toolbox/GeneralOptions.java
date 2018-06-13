@@ -1,6 +1,6 @@
 package be.libis.lias.toolbox;
 
-import uk.co.flamingpenguin.jewel.cli.Option;
+import com.lexicalscope.jewel.cli.Option;
 
 /**
  * The base interface that contains the general options.
